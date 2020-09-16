@@ -40,5 +40,5 @@ fn main() {
         .build()
         .unwrap();
 
-    let _ = server.serve("0.0.0.0:8000");
+    let _ = server.serve("127.0.0.1:8000");
 }
