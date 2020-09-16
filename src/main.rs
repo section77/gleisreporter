@@ -1,5 +1,6 @@
 use spaceapi_server::api::{StatusBuilder, Location, Contact, Feeds, Feed, IssueReportChannel};
 use spaceapi_server::api::sensors::PeopleNowPresentSensorTemplate;
+use spaceapi_server::modifiers::StateFromPeopleNowPresent;
 use spaceapi_server::SpaceapiServerBuilder;
 
 fn main() {
@@ -35,6 +36,7 @@ fn main() {
             description: None,
             names: None,
         }, "people_now_present".into())
+        .add_status_modifier(StateFromPeopleNowPresent {})
         .build()
         .unwrap();
 
