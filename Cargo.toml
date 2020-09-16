@@ -1,0 +1,8 @@
+[package]
+name = "gleisreporter"
+version = "0.1.0"
+authors = ["Jan Alexander <jan@nalx.net>"]
+edition = "2018"
+
+[dependencies]
+spaceapi-server = "0.5"
