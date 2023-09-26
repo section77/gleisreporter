@@ -1,8 +1,8 @@
 # gleisreporter
 SpaceAPI server implementation
 
-## Requirements
+## Runtime Requirements
 - [redis](https://redis.io)
 
-## Dependencies
+## Build-Time Dependencies
 - [spaceapi-server-rs](https://github.com/spaceapi-community/spaceapi-server-rs)
